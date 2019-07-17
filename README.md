@@ -12,16 +12,16 @@ I will continue with this to create a project named "Something More Serious" :sm
 Long life to Laracast ! :)
 
 ## Getting Started
-
-1) Clone the project
-2) Install dependencies `composer install`
-3) Create a database :/ -> sms (yes, abbr for Something More Serious :trollface:)
-
-## Prerequisites & Built With
+### Prerequisites & Built with
 
 * [PHP 7.3](https://www.php.net/manual/fr/install.php) - Back-end
 * [Composer](https://getcomposer.org/) - Dependency Management
 * [PostgreSQL](https://www.postgresql.org/) - Database
+
+### Installing
+1) Clone the project
+2) Install dependencies `composer install`
+3) Create a database :/ -> sms (yes, abbr for Something More Serious :trollface:)
 
 ## Versioning
 
@@ -29,7 +29,7 @@ I use [SemVer](http://semver.org/) for versioning.
 
 ## Author
 
-* **SENECHAL Maxime** - *Initial work* - [Ravaniss](https://github.com/Ravaniss)
+* **SENECHAL Maxime** - *FullStack Developer* - Aka [Ravaniss](https://github.com/Ravaniss)
 
 ### TODO
 

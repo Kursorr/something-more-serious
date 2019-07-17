@@ -10,3 +10,35 @@ I take back his code because it's really clear and concise <3
 I will continue with this to create a project named "Something More Serious" :smile:
 
 Long life to Laracast ! :)
+
+## Getting Started
+
+1) Clone the project
+2) Install dependencies `composer install`
+3) Create a database :/ -> sms (yes, abbr for Something More Serious :trollface:)
+
+## Prerequisites & Built With
+
+* [PHP 7.3](https://www.php.net/manual/fr/install.php) - Back-end
+* [Composer](https://getcomposer.org/) - Dependency Management
+* [PostgreSQL](https://www.postgresql.org/) - Database
+
+## Versioning
+
+I use [SemVer](http://semver.org/) for versioning.
+
+## Author
+
+* **SENECHAL Maxime** - *Initial work* - [Ravaniss](https://github.com/Ravaniss)
+
+### TODO
+
+- [ ] Sign in
+- [ ] Log in
+- [ ] Log out
+- [ ] Display articles on Home Page
+- [ ] Display an article choosen by the user (Article page)
+- [ ] Profile page
+- [ ] Edit profile
+- [ ] Create article (Create article page)
+- [ ] Delete article

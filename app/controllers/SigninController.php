@@ -20,6 +20,17 @@ class SigninController
    */
   public function register()
   {
-    var_dump($_POST);
+    $pseudo = $_POST['pseudo'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $verifpassword = $_POST['verifpassword'];
+
+    $error = '';
+
+    if (!strlen($pseudo) >= 4) {
+      return $error = 'Your pseudo should contains more or equal to 4 characters.';
+    }
+
+    return true;
   }
 }

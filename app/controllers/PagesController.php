@@ -22,11 +22,12 @@ class PagesController
 
   /**
    * Show the signin page
-   * @return mixed
    */
   public function signin()
   {
-    return view('signin');
+    $error = '';
+
+    return view('signin', ['error' => $error]);
   }
 
   /**
@@ -34,6 +35,19 @@ class PagesController
    */
   public function register()
   {
-    var_dump($_POST);
+    $pseudo = $_POST['pseudo'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $verifpassword = $_POST['verifpassword'];
+
+    $error = '';
+
+    if (strlen($pseudo) <= 4) {
+      $error = 'Your pseudo should contains more or equal to 4 characters.';
+
+      return view('signin', ['error' => $error]);
+    }
+
+    return true;
   }
 }

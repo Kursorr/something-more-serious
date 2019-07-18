@@ -80,16 +80,30 @@ nav ul {
 
 /* Sign in page */
 
-form.signin {
+.container {
 	display: flex;
-	flex-direction: column;
-	width: 150px;
+	justify-content: center;
 }
 
-form input {
+.signin {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+}
+
+.signin input {
 	margin-top: 15px;
 }
 
-form button {
+.signin button {
 	margin: 15px 0;
+}
+
+
+/* Footer */
+
+#footer {
+	display: flex;
+	justify-content: center;
+	margin: 60px;
 }

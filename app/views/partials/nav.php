@@ -1,8 +1,15 @@
-<nav>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/contact">Contact</a></li>
-    <li><a href="/users">Manage Users</a></li>
-  </ul>
-</nav>
+<div class="outContent">
+  <div class="content">
+    <div class="header">
+      <nav>
+        <div class="logo"></div>
+        <ul>
+          <li><a href="/"><span>Home</span></a></li>
+          <li><a href="/about"><span>Sign in</span></a></li>
+          <li><a href="/contact"><span>Contact</span></a></li>
+          <li><a href="/users"><span>Manage Users</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>

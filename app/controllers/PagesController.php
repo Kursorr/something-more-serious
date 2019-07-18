@@ -13,20 +13,27 @@ class PagesController
   }
 
   /**
-   * Show the about page.
-   */
-  public function about()
-  {
-    $company = 'Laracasts';
-
-    return view('about', ['company' => $company]);
-  }
-
-  /**
    * Show the contact page.
    */
   public function contact()
   {
     return view('contact');
+  }
+
+  /**
+   * Show the signin page
+   * @return mixed
+   */
+  public function signin()
+  {
+    return view('signin');
+  }
+
+  /**
+   * Manage post data
+   */
+  public function register()
+  {
+    var_dump($_POST);
   }
 }

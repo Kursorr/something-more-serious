@@ -77,3 +77,19 @@ nav ul {
 	align-items: center;
 	width: 50%;
 }
+
+/* Sign in page */
+
+form.signin {
+	display: flex;
+	flex-direction: column;
+	width: 150px;
+}
+
+form input {
+	margin-top: 15px;
+}
+
+form button {
+	margin: 15px 0;
+}

@@ -1,7 +1,10 @@
  <?php
 
 $router->get('', 'PagesController@home');
-$router->get('about', 'PagesController@about');
+
+$router->get('signin', 'PagesController@signin');
+$router->post('signin', 'PagesController@register');
+
 $router->get('contact', 'PagesController@contact');
 
 $router->get('users', 'UsersController@index');

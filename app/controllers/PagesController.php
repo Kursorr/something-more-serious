@@ -91,14 +91,10 @@ class PagesController
     $pseudo = $_POST['pseudo'];
     $password = $_POST['password'];
 
-
-
     session_start();
 
     $_SESSION['logged'] = true;
     $_SESSION['pseudo'] = $pseudo;
-
-    var_dump($_SESSION);
 
     return view('index', ['pseudo' => $_SESSION['pseudo']]);
   }

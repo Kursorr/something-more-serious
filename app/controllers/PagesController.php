@@ -91,11 +91,16 @@ class PagesController
     $pseudo = $_POST['pseudo'];
     $password = $_POST['password'];
 
-    session_start();
-
     $_SESSION['pseudo'] = $pseudo;
 
-    return view('index', ['pseudo' => $_SESSION['pseudo']]);
+    return view('index', ['pseudo' => $pseudo]);
+  }
+
+  public function logout()
+  {
+    session_start();
+    session_destroy();
+    return view('index');
   }
 
 }

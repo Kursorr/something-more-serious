@@ -1,9 +1,9 @@
-<?php session_start() ?>
+<?php session_start(); ?>
 <?php require('partials/head.php'); ?>
 
 <div class="outContent">
   <div class="content">
-    <?php if ($_SESSION['pseudo']): ?>
+    <?php if (isset($_SESSION)): ?>
       connected as <?= $_SESSION['pseudo'] ?>
     <?php endif ?>
     <h1>All Users</h1>

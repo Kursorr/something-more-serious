@@ -93,7 +93,6 @@ class PagesController
 
     session_start();
 
-    $_SESSION['logged'] = true;
     $_SESSION['pseudo'] = $pseudo;
 
     return view('index', ['pseudo' => $_SESSION['pseudo']]);

@@ -40,6 +40,23 @@ class QueryBuilder
   }
 
   /**
+   * Select a record from a database table.
+   *
+   * @param string $record
+   * @param string $table
+   * @return array
+   */
+  public function select($record, $table)
+  {
+    $statement = $this->pdo->prepare("select {$record} from {$table}");
+
+    $statement->execute();
+
+    return $statement->fetchAll(PDO::FETCH_CLASS);
+  }
+
+
+  /**
    * Insert a record into a table.
    *
    * @param string $table

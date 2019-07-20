@@ -8,6 +8,8 @@ $router->post('signup', 'PagesController@register');
 $router->get('signin', 'PagesController@signin');
 $router->post('signin', 'PagesController@login');
 
+$router->get('logout', 'PagesController@logout');
+
 $router->get('contact', 'PagesController@contact');
 
 $router->get('users', 'UsersController@index');

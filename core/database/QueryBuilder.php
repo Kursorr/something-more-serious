@@ -50,10 +50,8 @@ class QueryBuilder
   public function selectWhere()
   {
     // $statement = $this->pdo->prepare("SELECT {$record} FROM {$table} WHERE pseudo = {$data}");
-    // faut m'expliquer pourquoi cette putain de requête de merde fonctionne pas hein ...
-    $statement = $this->pdo->prepare("SELECT pseudo FROM users WHERE pseudo = 'ravaniss'");
-    // ntm ça fait 2h.
-    $statement->execute();
+    $statement = $this->pdo->prepare("SELECT pseudo FROM users WHERE pseudo = :pseudo");
+    $statement->execute([':pseudo' => 'rivianna']);
 
     return $statement->fetch(PDO::FETCH_OBJ);
   }

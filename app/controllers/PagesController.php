@@ -93,17 +93,14 @@ class PagesController
 
     $res = App::get('database')->selectWhere();
 
-    var_dump($res);
-
     $_SESSION['pseudo'] = $pseudo;
 
-    return view('index', ['pseudo' => $pseudo]);
+    redirect('/');
   }
 
   public function logout()
   {
-    session_start();
-    session_destroy();
+    unset($_SESSION['pseudo']);
     return view('index');
   }
 

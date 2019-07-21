@@ -5,7 +5,7 @@
         <div class="logo"></div>
         <ul>
           <li><a href="/"><span>Home</span></a></li>
-          <?php if (isset($_SESSION) && $_SESSION['pseudo']): ?>
+          <?php if (isset($_SESSION['pseudo'])): ?>
             <li><a href="/logout"><span>Log out</span></a></li>
           <?php else: ?>
             <li><a href="/signup"><span>Sign up</span></a></li>

@@ -2,11 +2,11 @@
 
 $router->get('', 'PagesController@home');
 
-$router->get('signup', 'PagesController@signup');
-$router->post('signup', 'PagesController@register');
+$router->get('signup', 'SigninController@signup');
+$router->post('signup', 'SigninController@register');
 
-$router->get('signin', 'PagesController@signin');
-$router->post('signin', 'PagesController@login');
+$router->get('signin', 'SigninController@signin');
+$router->post('signin', 'SigninController@login');
 
 $router->get('logout', 'PagesController@logout');
 

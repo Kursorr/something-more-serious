@@ -2,6 +2,8 @@
 
 namespace App\Core;
 
+use Exception;
+
 class Router
 {
   /**
@@ -57,6 +59,7 @@ class Router
    * @param string $uri
    * @param string $requestType
    * @return mixed
+   * @throws Exception
    */
   public function direct($uri, $requestType)
   {
@@ -75,6 +78,7 @@ class Router
    * @param string $controller
    * @param string $action
    * @return mixed
+   * @throws Exception
    */
   protected function callAction($controller, $action)
   {

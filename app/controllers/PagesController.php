@@ -92,6 +92,7 @@ class PagesController
     $password = $_POST['password'];
 
     $res = App::get('database')->selectWhere();
+    var_dump($res);
 
     $_SESSION['pseudo'] = $pseudo;
 
